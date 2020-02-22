@@ -1,0 +1,5 @@
+<div class="room" [style]="{'width': room.x + 'px', 'height': room.y + 'px'}">
+    <div class="room-seats" *ngFor="let seat of seats" [style]="{'left': seat.x + 'px', 'top': seat.y + 'px'}">
+        <app-seat></app-seat>
+    </div>
+</div>

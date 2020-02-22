@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "Паразиты",
+        "description": "Корейцы с корейцами что-то делают",
+        "year": 2019,
+        "date": [
+            { "year": 2020, "month": 2, "day": 22, "hour": 14, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 22, "hour": 16, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 22, "hour": 18, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 23, "hour": 15, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 23, "hour": 19, "minute": 0 }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Джокер",
+        "description": "Все об этом говорили, даже я знаю об этом",
+        "year": 2020,
+        "date": [
+            { "year": 2020, "month": 2, "day": 22, "hour": 10, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 23, "hour": 10, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 23, "hour": 12, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 23, "hour": 15, "minute": 0 },
+            { "year": 2020, "month": 2, "day": 25, "hour": 18, "minute": 0 }
+        ]
+    }
+]

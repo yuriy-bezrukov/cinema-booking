@@ -1,0 +1,18 @@
+<div class="cinema-img">
+    <img [src]="cinema.img ? cinema.img : placeholderImage" [alt]="cinema.title">
+</div>
+<div class="cinema-info">
+    <div class="cinema-title">
+        {{cinema.title}}
+    </div>
+    <div class="cinema-description">
+        {{cinema.description}}
+    </div>
+    <div class="cinema-year">
+        {{cinema.year}}
+    </div>
+</div>
+
+<div class="cinema-navigation">
+    <a [routerLink]="['/booking']" [queryParams]="{cinema: cinema.id}" class="submit-button">Go to booking</a>
+</div>

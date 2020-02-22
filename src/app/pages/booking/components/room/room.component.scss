@@ -1,0 +1,8 @@
+.room {
+    position: relative;
+    overflow: hidden;
+    
+    &-seats {
+        position: absolute;
+    }
+}

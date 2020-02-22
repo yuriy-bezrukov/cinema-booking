@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CinemaListModule } from './pages/cinema-list/cinema-list.module';
+import { BookingModule } from './pages/booking/booking.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CinemaListModule,
+    BookingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "room": {
+            "x": 500,
+            "y": 300,
+            "img": "qweqweqwe"
+        },
+        "date": { "year": 2020, "month": 2, "day": 22, "hour": 14, "minute": 0 },
+        "seats": [
+            { "id": 1, "x":20, "y":20, "typeSeat": 0, "typeBooking": "empty", "cost": 12},
+            { "id": 2, "x":40, "y":20, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 3, "x":60, "y":20, "typeSeat": 0, "typeBooking": "other","cost": 12},
+            { "id": 4, "x":80, "y":20, "typeSeat": 0, "typeBooking": "other","cost": 12},
+            { "id": 5, "x":100, "y":20, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 6, "x":40, "y":40, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 7, "x":60, "y":40, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 8, "x":80, "y":40, "typeSeat": 0, "typeBooking": "empty","cost": 12}
+        ] 
+    },
+    {
+        "id": 2,
+        "room": {
+            "x": 500,
+            "y": 300,
+            "img": "qweqweqwe"
+        },
+        "date": { "year": 2020, "month": 2, "day": 22, "hour": 17, "minute": 0 },
+        "seats": [
+            { "id": 1, "x":20, "y":20, "typeSeat": 0, "typeBooking": "other", "cost": 12},
+            { "id": 2, "x":40, "y":20, "typeSeat": 0, "typeBooking": "other","cost": 12},
+            { "id": 3, "x":60, "y":20, "typeSeat": 0, "typeBooking": "other","cost": 12},
+            { "id": 4, "x":80, "y":20, "typeSeat": 0, "typeBooking": "other","cost": 12},
+            { "id": 5, "x":100, "y":20, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 6, "x":40, "y":40, "typeSeat": 0, "typeBooking": "my","cost": 12},
+            { "id": 7, "x":60, "y":40, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 8, "x":80, "y":40, "typeSeat": 0, "typeBooking": "empty","cost": 12}
+        ] 
+    },
+    {
+        "id": 3,
+        "room": {
+            "x": 500,
+            "y": 300,
+            "img": "qweqweqwe"
+        },
+        "date": { "year": 2020, "month": 2, "day": 23, "hour": 10, "minute": 0 },
+        "seats": [
+            { "id": 1, "x":20, "y":20, "typeSeat": 0, "typeBooking": "other", "cost": 12},
+            { "id": 2, "x":40, "y":20, "typeSeat": 0, "typeBooking": "other","cost": 12},
+            { "id": 3, "x":60, "y":20, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 7, "x":60, "y":40, "typeSeat": 0, "typeBooking": "empty","cost": 12},
+            { "id": 8, "x":80, "y":40, "typeSeat": 0, "typeBooking": "empty","cost": 12}
+        ] 
+    }
+]

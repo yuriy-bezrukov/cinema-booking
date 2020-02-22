@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urls: {
+    cinemaList: '/assets/super-api/sinema-list.json',
+    sessionList: '/assets/super-api/session-list.json',
+  }
 };
 
 /*

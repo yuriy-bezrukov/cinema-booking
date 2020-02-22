@@ -1,0 +1,12 @@
+<div class="booking-date">
+    <app-date-panel></app-date-panel>
+</div>
+<div class="booking-information">
+    <div class="booking-information-room">
+        <app-room></app-room>
+    </div>
+    <div class="booking-information-payment">
+        <app-payment-information></app-payment-information>
+        <button *ngIf="displayPayButton" (click)="pay()">Pay</button>
+    </div>
+</div>
