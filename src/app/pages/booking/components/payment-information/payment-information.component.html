@@ -1,1 +1,10 @@
-<p>payment-information works!</p>
+<div class="payment">
+    <div class="payment-seats">
+        <div class="payment-seat-item" *ngFor="let seat of inform">
+            {{seat.id}} => {{seat.cost}}$
+        </div>
+    </div>
+    <div class="payment-sum">
+        {{sum}}
+    </div>
+</div>

@@ -5,6 +5,7 @@ import { tap } from 'rxjs/operators';
 
 import { IStateBooking, BookingAction } from '../models/booking.model';
 import { IDate } from 'src/app/shared/models/date.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class BookingService {
@@ -12,6 +13,9 @@ export class BookingService {
   private _state = new BehaviorSubject<IStateBooking>({});
 
   private set state(state: IStateBooking) {
+    if (!environment.production) {
+      console.log('BookingService => ' + state.action, state.payload)
+    }
     this._state.next(state);
   }
 
@@ -27,7 +31,11 @@ export class BookingService {
     return this.bookingDataService.getSeatByDate(cinemaId).pipe(tap(res => {
       this.state = {
         action: BookingAction.loadData,
-        payload: { sessions: res, seatIds: [] }
+        payload: { 
+          sessions: res,
+          seatIds: [],
+          current: {}
+        }
       }
     }))
   }
@@ -47,8 +55,8 @@ export class BookingService {
 
   toggleSeat(seatId: number) {
     let oldPayload = this.state.payload;
-    let seatIds = oldPayload.seatIds.includes(seatId) ? oldPayload.seatIds.filter(_d => _d !== seatId): [seatId, ...oldPayload.seatIds];
-    
+    let seatIds = oldPayload.seatIds.includes(seatId) ? oldPayload.seatIds.filter(_d => _d !== seatId) : [seatId, ...oldPayload.seatIds];
+
     this.state = {
       action: BookingAction.changeSeat,
       payload: {

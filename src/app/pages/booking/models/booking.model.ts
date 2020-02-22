@@ -31,16 +31,16 @@ export interface ISinemaRoom {
 }
 
 export interface ICinemaSession {
-    id: number;
-    date: IDate;
-    room: ISinemaRoom;
-    seats: ISeatBooking[];
+    id?: number;
+    date?: IDate;
+    room?: ISinemaRoom;
+    seats?: ISeatBooking[];
 }
 
 export enum BookingAction {
-    changeSeat,
-    changeDate,
-    loadData
+    changeSeat = 'changeSeat',
+    changeDate = 'changeDate',
+    loadData = 'loadData'
 }
 
 export interface IStateBooking {

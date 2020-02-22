@@ -1,0 +1,34 @@
+.seat {
+    width: 20px;
+    height: 20px;
+    background: green;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: background .4s ease-in-out;
+
+    &-other {
+        background: gray;
+    }
+
+    &-my {
+        background: #75e02d;
+    }
+
+    &-empty {
+        cursor: pointer;
+        &:hover {
+            background: #507aef;
+        }
+    }
+
+    &-select {
+        cursor: pointer;
+        background: #507aef;
+        &:hover {
+            background: #907aef;
+        }
+    }
+}

@@ -8,6 +8,7 @@ import { PaymentInformationComponent } from './components/payment-information/pa
 import { BookingService } from './services/booking.service';
 import { BookingDataService } from './services/booking-data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [BookingComponent],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [BookingService, BookingDataService]
 })

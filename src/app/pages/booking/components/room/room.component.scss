@@ -1,7 +1,9 @@
 .room {
     position: relative;
     overflow: hidden;
-    
+    border: 1px solid #b5b5b5;
+    background: #e9ffbb;
+
     &-seats {
         position: absolute;
     }

@@ -1,1 +1,4 @@
-<p>seat works!</p>
+<div class="seat" (click)="toggle()" [ngClass]="isSelect ? 'seat-select' : 'seat-' + seat.typeBooking">
+    {{seat.id}}
+    <!-- <img src="" alt=""> if use diff img => seat.type -->
+</div>

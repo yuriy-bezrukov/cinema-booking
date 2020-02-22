@@ -1,1 +1,6 @@
-<p>date-panel works!</p>
+
+<div class="session">
+    <button class="session-button" (click)="selectDate(session)" *ngFor="let session of sessions" >
+        {{session.date.day}}.{{session.date.month}}.{{session.date.year}} - {{session.date.hour}}:{{session.date.minute}}
+    </button>
+</div>

@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BookingService } from '../../services/booking.service';
 import { Subscription } from 'rxjs';
+import { BookingAction } from '../../models/booking.model';
 
 @Component({
   selector: 'app-booking',
@@ -27,7 +28,8 @@ export class BookingComponent implements OnInit, OnDestroy {
         return;
       }
       this.seatsId = state.payload.seatIds;
-      this.sessionId = state.payload.current.id;
+
+      this.sessionId = state.payload.current?.id;
       this.displayPayButton = !!state.payload.seatIds.length;
     }));
   }

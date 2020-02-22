@@ -2,8 +2,8 @@
     {
         "id": 1,
         "room": {
-            "x": 500,
-            "y": 300,
+            "x": 200,
+            "y": 250,
             "img": "qweqweqwe"
         },
         "date": { "year": 2020, "month": 2, "day": 22, "hour": 14, "minute": 0 },
@@ -21,8 +21,8 @@
     {
         "id": 2,
         "room": {
-            "x": 500,
-            "y": 300,
+            "x": 200,
+            "y": 250,
             "img": "qweqweqwe"
         },
         "date": { "year": 2020, "month": 2, "day": 22, "hour": 17, "minute": 0 },
@@ -40,8 +40,8 @@
     {
         "id": 3,
         "room": {
-            "x": 500,
-            "y": 300,
+            "x": 200,
+            "y": 250,
             "img": "qweqweqwe"
         },
         "date": { "year": 2020, "month": 2, "day": 23, "hour": 10, "minute": 0 },

@@ -1,0 +1,21 @@
+:host {
+    margin-top: 16px;
+    display: block;
+}
+
+.session {
+    &-button {
+        background: white;
+        border: 1px solid green;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin: 0 5px 0;
+        transition: .3s background;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            background: greenyellow;
+        }
+    }
+}
