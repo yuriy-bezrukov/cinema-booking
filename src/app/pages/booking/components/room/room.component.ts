@@ -18,7 +18,7 @@ export class RoomComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.sub.add(this.bookingService.state$.subscribe(state => {
-      if (!state.payload || !state.payload.current) {
+      if (!state?.payload?.current) {
         return;
       }
       this.seats = state.payload.current.seats;
