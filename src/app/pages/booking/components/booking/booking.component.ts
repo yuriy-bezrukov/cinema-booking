@@ -29,7 +29,7 @@ export class BookingComponent implements OnInit, OnDestroy {
       }
       this.seatsId = state.payload.seatIds;
 
-      this.sessionId = state.payload.current?.id;
+      this.sessionId = state.payload.current.id;
       this.displayPayButton = !!state.payload.seatIds.length;
     }));
   }
