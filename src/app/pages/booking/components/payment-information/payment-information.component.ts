@@ -18,7 +18,7 @@ export class PaymentInformationComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.sub.add(this.bookingService.state$.subscribe(state => {
-      if ([BookingAction.changeSeat, BookingAction.changeDate].includes(state.action) && state.payload?.current) {
+      if ([BookingAction.changeSeat, BookingAction.changeDate].includes(state.action) && state.payload && state.payload.current) {
         this.setTax(state.payload.seatIds, state.payload.current)
       } else if(state.action === BookingAction.loadData) {
         this.sum = 0;
@@ -33,7 +33,7 @@ export class PaymentInformationComponent implements OnInit, OnDestroy {
   }
 
   setTax(seatIds: number[], session: ICinemaSession) {
-    if (!session?.seats?.length) {
+    if (!session.seats || !session.seats.length) {
       this.sum = 0;
       return [];
     }
