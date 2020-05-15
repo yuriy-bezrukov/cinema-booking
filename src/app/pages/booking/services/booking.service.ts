@@ -4,8 +4,8 @@ import { BehaviorSubject } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 import { IStateBooking, BookingAction } from '../models/booking.model';
-import { IDate } from 'src/app/shared/models/date.model';
-import { environment } from 'src/environments/environment';
+import { IDate } from '../../../shared/models/date.model';
+import { environment } from '../../../../environments/environment';
 
 @Injectable()
 export class BookingService {

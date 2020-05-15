@@ -1,4 +1,4 @@
-import { IDate } from 'src/app/shared/models/date.model';
+import { IDate } from '../../../shared/models/date.model';
 
 export interface ICinema {
     id: number;
